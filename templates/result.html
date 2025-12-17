@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+
+  <!-- Ensures the page adjusts to different screen sizes -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title-->
+  <title>Prediction Result</title>
+
+  <!-- links the css file -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+  <!-- header -->
+  <div class="header">
+    <div class="container">
+      <h1>Prediction Result</h1>
+      <p>Your estimated UK property price is shown below.</p>
+    </div>
+  </div>
+
+  <!-- main content container -->
+  <div class="container">
+    <div class="card">
+
+      <!-- error display -->
+      {% if error %}
+        <div class="error-box">
+          <h2>Something went wrong:</h2>
+          <p>{{ error }}</p>
+        </div>
+
+      {% else %}
+
+        <!-- displays the predicted property price -->
+        <div class="result-box">
+          <h2>Estimated Price</h2>
+          <div class="prediction">{{ prediction }}</div>
+        </div>
+
+        <!-- displays a summary of the values entered by the user -->
+        <div class="details">
+          <h3>Your Inputs</h3>
+          <ul>
+            {% for key, value in inputs.items() %}
+              <li><strong>{{ key }}:</strong> {{ value }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
+      {% endif %}
+
+      <!-- link to return to the homepage and make another prediction -->
+      <div class="actions">
+        <a class="link" href="/">← Make another prediction</a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

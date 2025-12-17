@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f9;
+  color: #111;
+}
+
+/* header*/
+.header {
+  background: #122b45;
+  color: white;
+  padding: 30px 0;
+}
+
+/* centre alignment*/
+.container {
+  width: 92%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header h1 {
+  margin: 0 0 10px 0;
+  font-size: 40px;
+}
+
+.header p {
+  margin: 0;
+  font-size: 18px;
+  opacity: 0.95;
+}
+
+/* card layout to keep the form and result*/
+.card {
+  background: white;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.field {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+select, input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cfd7df;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* container for buttons*/
+.actions {
+  margin-top: 18px;
+}
+
+button {
+  background: #2d6cdf;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.92;
+}
+
+.result-box {
+  padding: 14px;
+  border-radius: 10px;
+  background: #eef6ff;
+  border: 1px solid #cfe5ff;
+}
+
+.prediction {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+/* shows the user's input values*/
+.details {
+  margin-top: 18px;
+}
+
+.details ul {
+  margin: 8px 0 0 18px;
+}
+
+/* error messages*/
+.error-box {
+  padding: 16px;
+  border-radius: 10px;
+  background: #fff0f0;
+  border: 1px solid #ffbcbc;
+}
+
+.link {
+  text-decoration: none;
+  color: #2d6cdf;
+  font-size: 18px;
+}
