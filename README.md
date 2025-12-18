@@ -27,7 +27,7 @@
 ### - As a future improvement, the application could be moved to a cloud platform so it can be accessed online rather than only running locally. This would make the system more realistic and closer to how machine learning applications are usually shared and used outside of a development environment.
 
 ## Links
-### - Video demo link : 
+### - Video demo link : https://drive.google.com/file/d/1LTEIkE4YvtzAJXcsc6mWQeucti7HRunC/view?usp=sharing
 ### - Github Link for lab tasks : https://github.com/ArefeenSalim/COM6033-Applied-Artificial-Intelligence.git
 ### - Link to the source of the dataset : https://www.gov.uk/government/statistical-data-sets/price-paid-data-downloads
-### - Github link for the Property Price Predictor : https://github.com/ArefeenSalim/COM6033_Assignment_1.git
+### - Github link for the UK Property Price Predictor : https://github.com/ArefeenSalim/COM6033_Assignment_1.git
